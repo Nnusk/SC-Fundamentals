@@ -1,0 +1,36 @@
+/*Lineal search
+-> Checking element one by one
+-> Comparing each element with the target value
+-> Stopping when the element is found or the list ends
+-> NO sorting required
+-> Complexity O(n)*/
+
+public class LinearSearch {
+
+//Method that returns the element index or -1 if the element does not exist
+public static int linearSearch(int[] arr, int target){
+
+    //Sort the array item by item
+    for (int i=0; i < arr.lenght; i++){
+
+// We compare the actual element with the target
+    if arr[i] == target {
+        return i; //element found
+    }
+}
+
+//If we finish the loop and the target is not found
+return -1
+
+}
+
+public static void main(String[] args) {
+    int[] numbers = {4,2,7,1,9};
+    int target = 7;
+
+    int result = linearSearch(numbers, target);
+
+    System.out.println(result);
+}
+}
+
