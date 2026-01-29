@@ -22,19 +22,29 @@ Scanner scanner = new Scanner(System.in);
 inizialisedArray[2] = 3;
 
 //Check the array length (the number of the elements that can contain). It starts in 1.
-System.out.println("Array length: " + fixSizeArray.length);
+
+System.out.println("\nArray length: " + fixSizeArray.length);
 
 //------------------------------------------TRASVERS AN ARRAY------------------------------------------
+
+System.out.print("\nTransversing the array using FOR: ");
 //FOR
 for (int i = 0; i < inizialisedArray.length; i++) {
 System.out.print(inizialisedArray[i] + " ");
 }
+
+
+System.out.print("\nTransversing the array using FOR-EACH: ");
 //FOR-EACH (if you don't know the index. Better for reading, not for modifying)
 for (int num : inizialisedArray) {
     System.out.print(num + " ");
 }
 
+
+System.out.println("\n");
 //------------------------------------------ADD ELEMENTS------------------------------------------
+System.out.println("Adding elements to an empty array: ");
+
 //Inisialize index
 emptyArray = new String[5]; // 5 indexs 0 to 
 
@@ -43,20 +53,27 @@ for (int i =0; i < emptyArray.length; i++) {
     System.out.println("Write a word: ");
     emptyArray[i] = scanner.nextLine(); //or "scanner.nextInt" or the type of data you need to instert.
 }
-System.out.print(Arrays.toString(emptyArray) + " "); //easiest way to print an array
-
+System.out.print("\nYour words: " +Arrays.toString(emptyArray) + " "); //easiest way to print an array
+System.out.println("\n");
 //------------------------------------------SORT AN ARRAY------------------------------------------
+
 // Via java
+System.out.println("\nSorting an array using Arrays.sort(): ");
+
 Arrays.sort(emptyArray);
 
 System.out.print(Arrays.toString(emptyArray) + " "); //easiest way to print an array
 
+
 //Via Bubble (Manual)
+System.out.println("\nSorting an array using Bubble Sort: ");
+
+
 for (int i = 0; i < emptyArray.length -1; i++) {
     int minIndex = i;
 
     for (int j = i +1; j < emptyArray.length; j++){
-        if (emptyArray[j].compareTo(emptyArray[minIndex]) < 0){ //Replace "compare to" for "< emptyArray[minIndex]){ if its not a String"
+        if (emptyArray[j].compareTo(emptyArray[minIndex]) < 0){ //Replace "compare to" by "< emptyArray[minIndex]){ if its not a String"
             minIndex = j;
         }
     }
@@ -66,28 +83,40 @@ for (int i = 0; i < emptyArray.length -1; i++) {
 }
 System.out.print(Arrays.toString(emptyArray) + " "); //easiest way to print an array
 
+System.out.println("\n");
 //------------------------------------------FIND MIN/MAX------------------------------------------
 //Min
+System.out.println("\nFinding min: ");
 int min = inizialisedArray[0];
+
+System.out.print(inizialisedArray[0] + " ");
 
 for (int i = 1; i < inizialisedArray.length; i++){
     if (inizialisedArray[i] < min) {
         min = inizialisedArray[i];
 
     }
-    System.out.println(inizialisedArray[i]);
+    System.out.print(inizialisedArray[i] + " ");
 }
+System.out.println("\nMin: " + min);
+
 
 //Max
+System.out.println("\nFinding max: ");
 int max = inizialisedArray[0];
+
+System.out.print(inizialisedArray[0] + " ");
 
 for (int i = 1; i < inizialisedArray.length; i++){
     if (inizialisedArray[i] > max) {
         max = inizialisedArray[i];
 
     }
-    System.out.println(inizialisedArray[i]);
+    System.out.print(inizialisedArray[i] + " ");
 }
+
+System.out.println("\nMax: " + max);
+
 
 scanner.close();
 }
