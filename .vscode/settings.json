@@ -47,8 +47,38 @@
     "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
     "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
     "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
-    "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
-    "path-intellisense.absolutePathToWorkspace": true,
-    "path-intellisense.showOnAbsoluteSlash": false,
-    "accessibility.verbosity.inlineChat": false
+  "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
+  "path-intellisense.absolutePathToWorkspace": true,
+  "path-intellisense.showOnAbsoluteSlash": false,
+  "accessibility.verbosity.inlineChat": false,
+  "vscode-pokemon.defaultPokemon": [
+      {
+        "type": "dunsparce",
+        "name": "Dunsparce"
+      },
+      {
+        "type": "aron",
+        "name": "Aron"
+      },
+      {
+        "type": "gible",
+        "name": "Gible"
+      },
+      {
+        "type": "swinub",
+        "name": "Swinub"
+      },
+      {
+        "type": "gible",
+        "name": "Gible"
+      },
+      {
+        "type": "axew",
+        "name": "Axew"
+      },
+      {
+        "type": "swablu",
+        "name": "Swablu"
+      }
+    ]
 }
