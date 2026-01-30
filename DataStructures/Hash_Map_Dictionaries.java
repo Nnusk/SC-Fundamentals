@@ -91,9 +91,30 @@ public class Hash_Map_Dictionaries {
 
         System.out.println(wordsMap);
 
+       //---------------COUNTING CHARACTERS IN A STRING---------------
+    System.out.println("\nWrite a word to count the letters!");
+    System.out.println(); //to consume the \n before keyboard entry
+
+    String aWord = keyboard.nextLine();
+    aWord = aWord.toLowerCase(); //avoid caps
+    Map<Character, Integer> countingChar = new HashMap<>();
+
+    for (char c: aWord.toCharArray()){
+        if (c != ' '){ //ignores spaces
+        countingChar.put(c, countingChar.getOrDefault(c, 0) +1); //if the char no exist, returns 0. If it exist +1
+    }
+}
+
+    System.out.println(countingChar);
+
         keyboard.close();
 
 
     }
+
+    //---------------COUNTING WORDS IN A SENTENCE---------------
+    //---------------FIND THE FIRST UNREPEATED CHARACTER---------------
+    //---------------COMPARING ANAGRAMS---------------
+
 
 }
