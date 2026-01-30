@@ -1,6 +1,6 @@
 /*QUEUE
 -> FIFO data structure (First In First Out)
--> Used is BFS
+-> Used in BFS (Breadth-First Search)
 */
 
 package DataStructures;
