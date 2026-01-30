@@ -17,7 +17,7 @@ public class Queues{
     Queue<String> peopleWaiting =  new LinkedList<>();
     
 
-    //Adding elements by "add" (throw excemption if element cannot be added)
+    //Adding elements by "add" (throws excemption if element cannot be added)
     peopleWaiting.add("Michael Scott");
     peopleWaiting.add("Dwight Schrute");
     peopleWaiting.add("Homer Simpson");
@@ -32,7 +32,7 @@ public class Queues{
 
     peopleWaiting.offer(queueElement);
 
-    //Remove element by "remove" (throw exception if element cannot be removed)
+    //Remove element by "remove" (throws exception if element cannot be removed)
     peopleWaiting.remove(); // remove the first element in the queue
     peopleWaiting.remove("Homer Simpson");
 
