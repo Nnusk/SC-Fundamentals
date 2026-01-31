@@ -17,7 +17,7 @@ public class Sets {
 
         Scanner keyboard = new Scanner(System.in);
 
-        //Inisializing Set
+        //Inisializing Sets
         Set<String> namesHS = new HashSet<>(); //unordered
         Set<String> namesLHS = new LinkedHashSet<>(); //ordered by insertion
         Set<String> namesTS = new TreeSet<>(); //natural order (1-100, a-z...)
@@ -28,11 +28,13 @@ public class Sets {
         while (true) {
             String name = keyboard.nextLine();
             if (name.equals("Stop")) break; //equals is used to compare the content of a string or objects
+            //Adding elements to the sets
             namesHS.add(name);
             namesLHS.add(name);
             namesTS.add(name);
         }
 
+        //Printing sets
         System.out.println("\nHash Set: ");
         System.out.println(namesHS);
 
@@ -42,12 +44,16 @@ public class Sets {
         System.out.println("\nTree Set: ");
         System.out.println(namesTS);
 
+        //Checking sets size
         System.out.println("\nThe sets contain " + namesHS.size() + " elements.");
 
         System.out.println("Write a name you want to remove from the set: ");
         String name = keyboard.nextLine();
 
+        //Checking if an element exist in the set
         if (namesHS.contains(name) == true){
+
+        //Removing elements from the sets
             namesHS.remove(name);
             namesLHS.remove(name);
             namesTS.remove(name);

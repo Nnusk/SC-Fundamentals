@@ -15,7 +15,7 @@ public class Deques {
         Scanner keyboard = new Scanner(System.in);
 
         //Inisializing a deque
-        Deque<String> bookShelf = new ArrayDeque();
+        Deque<String> bookShelf = new ArrayDeque<String>();
 
         //Remove element by "poll" (returns null if first/last element cannot be removed)
         //"poll" without "First" should work the same way
