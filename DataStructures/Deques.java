@@ -25,9 +25,8 @@ public class Deques {
         //Adding elements by "add" (throws excemption if element cannot be added)
         bookShelf.addFirst("Sushi 101"); //add the element to the beggining
         bookShelf.addFirst("Best pizza toppings");
-        //"add" without "Last" works the same way
         bookShelf.addLast("Middle earth recipes"); //add the element to the end
-        bookShelf.addLast("The Sims cooking book");
+        bookShelf.addLast("The Sims cooking book"); //"add" without "Last" works the same way
         bookShelf.addLast("Mistborn");
 
         
