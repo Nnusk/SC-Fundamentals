@@ -13,6 +13,7 @@ import java.util.Stack;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class EdgeCases {
 
@@ -56,7 +57,7 @@ public class EdgeCases {
         numsQueue.remove(); //Throws an exemption if the queue is empty
         numsQueue.poll(); //Returns false if empty
 
-        //-----------------LINEAR/BINARY SEARCH-----------------
+        //-----------------LINEAR/BINARY SEARCH/TWO POINTERS-----------------
         //Empty Array
         if (numsArray == null || numsArray.length == 0) return; //if the method is void
         if (numsArray == null || numsArray.length == 0) return 0; //If the method is not void
@@ -87,15 +88,11 @@ public class EdgeCases {
         while (left <= right){
             int mid = left + (right - left) /2;
         //avoid using:
-        //int mid = (right - left) /2;
+            /*int mid = (right - left) /2;*/
         //if right and left are big
             
         }
-        
-
-        //-----------------LOOPS-----------------
-        //Infinite loop
-        
+            
         //-----------------SETS/MAPS-----------------
         //Non existent key
         Map<String, Integer> numsMap = new HashMap<>();
@@ -110,15 +107,15 @@ public class EdgeCases {
             numsMap.put("a", 3);
         }
 
-        //-----------------SET-----------------
-        //
-
         //-----------------TREES/GRAPHS-----------------
         //Null root node
         //Cicles
 
         //-----------------SCANNER-----------------
         //Dirty buffer
+        Scanner keyboard = new Scanner(System.in);
+
+        
 
         //-----------------USER INPUT-----------------
         //Invalid input
