@@ -1,0 +1,17 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class MyAlgorithmTest {
+
+    @Test
+    void testHappyPath() { ... }
+
+    @Test
+    void testEmptyArray() { ... }
+
+    @Test
+    void testNullArray() { ... }
+
+    @Test
+    void testDuplicates() { ... }
+}
